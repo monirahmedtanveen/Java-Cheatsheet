@@ -18,11 +18,11 @@ public class Account {
     }
 
     public Account(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
-        this.setAccountNumber(accountNumber);
-        this.setBalance(balance);
-        this.setCustomerName(customerName);
-        this.setEmail(email);
-        this.setPhoneNumber(phoneNumber);
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     public void setAccountNumber(String accountNumber) {
