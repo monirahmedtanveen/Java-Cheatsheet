@@ -83,7 +83,7 @@ public class Main {
         if (mobilePhone.updateContact(contactName, newContact)) {
             System.out.println("Contact has updated successfully");
         } else {
-            System.out.println("Cannot update, " + contactName + " is not found on file");
+            System.out.println("Cannot update.");
         }
     }
 

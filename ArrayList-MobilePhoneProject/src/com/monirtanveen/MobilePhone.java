@@ -28,8 +28,14 @@ public class MobilePhone {
     }
 
     public boolean updateContact(String contactName, Contact newContact) {
+        if (findContact(newContact.getName()) >= 0) {
+            System.out.println("Failed! " + newContact.getName() + " is already exists");
+            return false;
+        }
+
         int position = findContact(contactName);
         if (position < 0) {
+            System.out.println("Failed! " + contactName + " is not found on the file");
             return false;
         }
 
