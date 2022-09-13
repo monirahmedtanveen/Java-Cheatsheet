@@ -2,6 +2,7 @@ package com.monirtanveen;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetMain {
 
@@ -21,5 +22,19 @@ public class SetMain {
         System.out.println(names);
 
         System.out.println(names.contains("Name B"));
+
+        Set<String> nameHash = new HashSet<>();
+        nameHash.add("Walter");
+        nameHash.add("White");
+        System.out.println(nameHash);
+
+        System.out.println(nameHash.contains("Walt"));
+
+        Set<String> nameTree = new TreeSet<>();
+        nameTree.add("Monir");
+        nameTree.add("Ahmed");
+        System.out.println(nameTree);
+
+        System.out.println(nameTree.contains("Ahmed"));
     }
 }

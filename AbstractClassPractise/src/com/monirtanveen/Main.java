@@ -17,6 +17,8 @@ public class Main {
 
         Male male = new Male("Walter White");
 
+        System.out.println(male);
+
         male.sleep();
         male.eat();
         male.refuel(15.5);

@@ -7,6 +7,11 @@ public class Male extends Pet implements Activity, FuelVehicle {
     }
 
     @Override
+    public String toString() {
+        return "This is Male Class";
+    }
+
+    @Override
     public void move() {
         System.out.println(super.name + " male is moving for cook meth");
     }
