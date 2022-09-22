@@ -1,6 +1,6 @@
 package com.monirtanveen.zoo;
 
-public class Cage<E> {
+public class Cage<E extends Animal & Eats & Runs> {
     private E animal1;
     private E animal2;
 
@@ -25,5 +25,19 @@ public class Cage<E> {
 
     public void setAnimal2(E animal2) {
         this.animal2 = animal2;
+    }
+
+    public boolean isCompatible() {
+        return animal1.getType().equals(animal2.getType());
+    }
+
+    public void feedAnimal() {
+        animal1.eat();
+        animal2.eat();
+    }
+
+    public void runAnimal() {
+        animal1.run();
+        animal2.run();
     }
 }
